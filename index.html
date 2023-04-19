@@ -15,8 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
     </nav>
@@ -31,7 +30,6 @@
         <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
         </div>
@@ -65,6 +63,8 @@
             </div>
             </p>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
+        onclick="location.href='./#about'"/>   
     </section>
     <section id ="about">
         <p class="section__text__p1"> Learn More  </p> 
@@ -96,7 +96,7 @@
             onclick="location.href='./#experience'"/>
      </section>
      <section id ="experience">
-        <p class="section__text__p1">See My</p>
+        <p class="section__text__p1">My Programming</p>
         <h1 class="title"> Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
@@ -146,7 +146,7 @@
                     <article>
                         <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
                         <div>
-                            <h3>C</h3>
+                            <h3>C Programming</h3>
                             <p>Basic</p>
                         </div>
                     </article>
@@ -176,19 +176,36 @@
                 </div>
             </div>  
             <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
-            onclick="location.href='./#projects'"/>      
+            onclick="location.href='./#contact'"/>      
     </section>
-    <section id="projects">
-        <p class="section__text__p1">Recent Projects</p>
-        <div class="experience-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
-                </div>
-                
+    <section id="contact">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-"/>
+                <p> <a href="mailto:feeleytommy@gmail.com">Feeleytommy@gmail.com</a></p>
             </div>
+        <div class="contact-info-container">
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon linkedin-icon"/>
+                <p> <a href="https://www.linkedin.com/in/tommy-feeley-522237174/">LinkedIn</a></p>
+            </div>
+
         </div>
     </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Tommy Feeley.</p>
+    </footer>
     <script src="script.js"></script> 
 </body>
 </html>
