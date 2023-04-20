@@ -17,7 +17,10 @@
         display: flex;
     }
     #experience, .experience-details-container {
-        display: block;
+        margin-top: 2rem;
+    }
+    #profile, .section-container {
+        display: block
     }
     .arrow {
         display: none;
