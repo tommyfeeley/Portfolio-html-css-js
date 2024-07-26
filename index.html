@@ -10,7 +10,6 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Tommy Feeley</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -42,7 +41,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, 
             <h1 class=""title">I'm Tommy Feeley</h1>
-            <p class="section__text__p2">Computer Science Student at Rutgers</p>
+            <p class="section__text__p2">2024 Rutgers Computer Science Graduate</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" 
                 onclick="window.open('./assets/Tommy-Feeley-Resume.pdf')"
@@ -66,32 +65,41 @@
         <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
         onclick="location.href='./#about'"/>   
     </section>
+    
     <section id ="about">
         <p class="section__text__p1"> Learn More  </p> 
             <h1 class="title">About Me </h1> 
-            <div class="section-container">
-                <div class="section__pic-container">
-                    <img src="assets/pickle.jpg" alt="Profile picture" class="about pic"
-                />
-            </div>
+            
+            <section id="media-section">
+                <div class="media-container">
+                    <div class="video-container">
+                        <video autoplay loop>
+                            <source src="./assets/trains.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h2>Experience</h2>
-                        <p> I am seeking <br/>my first internship! </p>
+                        <img src="./assets/goal.png" alt="Goal/Target Icon" class="icon">
+                        <h2>Career Goal</h2>
+                        <p> Seeking work as a <br/>software engineer, data analyst, <br/> or AI engineer! </p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <img src="./assets/students-cap.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
-                        <p> Pursuing B.A. of Computer Science from <br/> Rutgers University</p>
+                        <p> Raritan Valley Community College — Computer Science (2019-2021)</p>
+                        <p> Rutgers University-New Brunswick — Computer Science (2021-2024)</p>
                     </div>
                     <div class="text-container">
-                        <p> Hi!
-                            I'm Tommy Feeley, I'm a senior studying for a Computer Science (B.A.) at Rutgers-New Brunswick (graduating in 2024). I studied at computer science at Raritan Valley Community College for 2 years prior to transferring. Looking for software engineering internships for summer 2023, and potentially summer 2024!</p>
+
                     </div>
                 </div>
+                
+                </section>
             </div>
+
             <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" 
             onclick="location.href='./#experience'"/>
      </section>
@@ -204,7 +212,9 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2024 Tommy Feeley | Version 1.1</p>
+        <p>Copyright &#169; <script>
+            document.write(new Date().getFullYear());
+        </script> Tommy Feeley | Version 1.1</p>
     </footer>
     <script src="script.js"></script> 
 </body>
